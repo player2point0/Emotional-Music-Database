@@ -1,0 +1,11 @@
+.DS_Store
+/bin
+
+\.idea/encodings\.xml
+
+\.idea/workspace\.xml
+/.metadata/
+
+csc1009\.iml
+
+\.idea/libraries/json_20180813\.xml

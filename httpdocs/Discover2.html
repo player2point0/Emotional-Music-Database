@@ -1,0 +1,62 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link href="css/Discover.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+  </head><body>
+    <div class="navbar navbar-expand-md navbar-dark bg-dark" id="NavBar">
+        <a href=""><i class="fas fa-home" style="font-size: 50;"></i></a> <a class="big-font" href="">Login/SignUp</a>
+        <form style="padding-left: 500;" action="/search" method=”GET”> 
+        <input class="search-box" type="text" name="searchQuery"> 
+        <input class="search-box" type="submit" value="Search"> </form> 
+    </div>
+    <div id="Sliders">
+        <form action="search" method="GET"> 	
+		<label for="Happy"><i class="em-svg em-grin"></i></label>
+		<input id="Happy" class="slider" name="happy" type="range" min="0" max="100" step="1">
+        <label for="Angry"><i class="em-svg em-angry"></i></label>
+        <input id="Angry" class="slider" name="angry" type="range" min="0" max="100" step="1">	
+        <label for="Excited"><i class="em-svg em-heart_eyes"></i></label>
+        <input id="Excited" class="slider" name="excited" type="range" min="0" max="100" step="1">
+        <label for="Sad"><i class="em-svg em-cry"></i></label>
+        <input id="Sad" class="slider" name="sad" type="range" min="0" max="100" step="1">	
+        <label for="Relaxed"><i class="em-svg em-sleeping"></i></label>
+        <input id="Relaxed" class="slider" name="relaxed" type="range" min="0" max="100" step="1">
+        <br><input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="FriendsList">
+        <h1>Friends</h1>
+        <div id="Friend">
+          <div class="friendHistory">
+            <div>
+               <h2>name</h2>
+              <h3>Song</h3>
+            </div>
+            <h4>time</h4>
+          </div>        
+        </div>
+          <button id="AddFriendBtn" onclick="AddFriend()">Add Friend</button>
+    </div>
+
+<script>
+    function AddFriend()
+    {
+      console.log("HELLO");
+       var friendName = prompt("Enter Friend's Name"); 
+    }
+    
+</script>
+
+
+
+</body>
+</html>

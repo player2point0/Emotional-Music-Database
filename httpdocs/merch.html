@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Merchandise | Store</title>
+        <script src="merch.js"></script>
+    
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+    
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar12">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar12"> <a class="navbar-brand d-none d-md-block" href="#">
+          <i class="fa d-inline fa-lg fa-circle"></i>
+          <b> Emotional Music Website</b>
+        </a>
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"> <a class="nav-link" href="./Login.html">Login/Sign Up</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="merch.html">Merch</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="Discover.html">Discover</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="Search.html">Search</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" style=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" style=""></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" style=""></script>
+        
+        <header class="main-header">
+          
+            <h1>Merchandise</h1>
+        </header>
+        
+        <section class="container content-section">
+            <h2 class="section-header">T-Shirts</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <img class="shop-item-image" src="tshirt.jpg" width="500" height="350">
+                    <div class="shop-item-details">
+                         <span class="shop-item-title">Nirvana T-Shirt</span>
+                        <span class="shop-item-price">£7.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="acdc.jpg" width="350" height="300">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">ACDC T-Shirt</span>
+                        <span class="shop-item-price">£7.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="kiss.jpg" width="350" height="300">
+                    <div class="shop-item-details">
+                         <span class="shop-item-title">Kiss T-Shirt</span>
+                        <span class="shop-item-price">£7.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="queen.jpg" width="300" height="300">
+                    <div class="shop-item-details">
+                         <span class="shop-item-title">Queen T-Shirt</span>
+                        <span class="shop-item-price">£7.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Mugs</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <img class="shop-item-image" src="mug2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Beatles Mug</span>
+                        <span class="shop-item-price">£3.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="mug1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Nirvana Mug</span>
+                        <span class="shop-item-price">£3.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">£0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                
+            </div>
+        </footer>
+    </body>
+
+</html>

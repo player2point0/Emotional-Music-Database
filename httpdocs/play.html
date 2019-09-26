@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Play page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/play.css" rel="stylesheet" type="text/css">
+		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+		
+		<div id="music-player-div">
+			<iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/G_sBOsh-vyI?autoplay=1&origin=http://example.com"
+  frameborder="0"></iframe>
+		</div>
+		<div id="emotion-selector-div">
+			<button title="angry" class="emotion-btn"><i class="em-svg em-angry" ></i></button>
+			<button title="sad" class="emotion-btn"><i class="em-svg em-cry"></i></button>
+			<button title="love" class="emotion-btn"><i class="em-svg em-heart_eyes"></i></button>
+			<button title="happy" class="emotion-btn"><i class="em-svg em-grin"></i></button>
+			<button title="sleepy" class="emotion-btn"><i class="em-svg em-sleeping"></i></button>
+		</div>
+		
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+		<script src="js/play.js"></script>
+  </body>
+</html>

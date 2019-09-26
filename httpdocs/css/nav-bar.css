@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+
+#search-bar{
+    margin-bottom: 5px;
+	width: 100%;
+	height: auto;
+	display: inline-grid;
+	align-items: center;
+	padding: 5px;
+	font-size: 2vw;
+	background-color: rgb(21, 21, 21);
+	color: #fff;
+	font-weight: 600;
+    font-family: Arial;
+    text-align: center;    
+    grid-template: "homeButton searchBox login merch stats" 1fr
+    / 1fr 8fr 5fr;
+}
+
+#mobile-links #login{
+    grid-area: "login";
+}
+
+#mobile-links #merch{
+    grid-area: "merch";
+}
+
+#mobile-links #stats{
+    grid-area: "stats";
+}
+
+#search-bar a{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+#search-bar a:hover{
+	opacity: 0.5;
+}
+
+#search-bar-home{
+	color: white;
+	text-align: center;
+	padding: 10px;
+	display: inline-block;
+	font-size: 3vw;
+	grid-area: "homeButton";
+}
+
+#search-bar form{
+	height: 8vh;
+	display: inline-grid;
+	padding: 10px;
+	grid-template-columns: 5fr 1fr;
+	grid-area: "searchBox";
+	align-content: center;
+	text-align: center;
+}
+
+#search-bar form button{
+	color: white;
+	background-color: transparent;
+  	border: none;
+	font-size: 3vw;
+}
+#search-bar form button:hover{
+	opacity: 0.5;
+}
+ 
+#mobile-links{
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+}
+
+#hamburger{
+	display: none;
+}
+
+/*mobile phones*/
+@media only screen and (max-width: 600px) 
+{
+	#mobile-links {
+		display: none;
+		width: 100%;
+		grid-area: "mobile-links";
+		grid-column: 1 / span 3;
+		padding: 10px;
+		text-align: center;
+		align-content: center;
+	}
+	#mobile-links a{
+		display: block;
+		text-align: center;
+	}
+
+	#hamburger{
+        display: inline-block;
+		grid-area: "hamburger";
+		text-align: center;
+	}
+	
+	#search-bar {
+        grid-template: "homeButton searchBox hamburger" auto
+        "mobile-links mobile-links mobile-links" auto
+        / 1fr 8fr 2fr;
+        padding: 5px;
+		font-size: 4vw;
+	}
+	
+	#search-bar form button{
+		font-size: 6vw;
+	}
+
+	#search-bar form{
+		grid-template-columns: 5fr 2fr;
+	}
+
+	#search-bar-home{
+		font-size: 6vw;
+	}
+}

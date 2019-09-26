@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Search</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">		
+		
+		<link href="css/search.css" rel="stylesheet" type="text/css">		
+		<link href="css/nav-bar.css" rel="stylesheet" type="text/css">		
+		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="httpdocs/css/theme.css" type="text/css">
+		<script src="js/deleteSearchResult.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+		<nav id="search-bar">
+				<a href="Discover" id="search-bar-home"><i class="fas fa-home"></i></a>
+				<form action="search" method="GET">
+					<input type="text" name="searchQuery">
+					<button type="submit"><i class="fas fa-search"></i></button>
+				</form>
+			<a href="javascript:void(0);" id="hamburger" onclick="myFunction()">
+					<i class="fa fa-bars"></i></a>
+			<div id="mobile-links">
+				<a href="Signup">Login/SignUp</a>
+				<a href="Merch">Merch</a>
+			</div>
+			
+			</nav>
+		
+		<script>
+function myFunction() {
+  var x = document.getElementById("mobile-links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+				<div class="search-result">
+					<button class="search-result-delete" onclick="deleteSong('id');"><i class="far fa-times-circle"></i></button>
+					<a href="music?id=123">
+					<img src="https://via.placeholder.com/150">
+					<div class="search-result-title">
+						<h2>title</h2>
+					</div>
+					<div id="search-result-emotions">
+							<i style="opacity: 0.1" class="em-svg em-angry" ></i>
+							<i style="opacity: 0.5" class="em-svg em-cry"></i>
+							<i style="opacity: 0.3" class="em-svg em-heart_eyes"></i>
+							<i style="opacity: 0.8" class="em-svg em-grin"></i>
+							<i style="opacity: 0.4" class="em-svg em-sleeping"></i>
+					</div>
+					</a>
+				</div>
+				<div class="search-result">
+					<div class="deleted-result"><h2>see ya</h2></div>
+				</div>
+			
+			<a href="music?id=123">
+				<div class="search-result">
+					<img src="https://via.placeholder.com/150">
+					<div class="search-result-title">
+						<h2>title</h2>
+					</div>
+					<div id="search-result-emotions">
+							<i style="opacity: 0.1" class="em-svg em-angry" ></i>
+							<i style="opacity: 0.5" class="em-svg em-cry"></i>
+							<i style="opacity: 0.3" class="em-svg em-heart_eyes"></i>
+							<i style="opacity: 0.8" class="em-svg em-grin"></i>
+							<i style="opacity: 0.4" class="em-svg em-sleeping"></i>
+					</div>
+				</div>
+			</a>
+			<div class="search-result">
+				<img src="https://via.placeholder.com/150">
+				<div class="search-result-title">
+					<h2>title</h2>
+				</div>
+				<div id="search-result-emotions">
+						<i style="opacity: 0.1" class="em-svg em-angry" ></i>
+						<i style="opacity: 0.5" class="em-svg em-cry"></i>
+						<i style="opacity: 0.3" class="em-svg em-heart_eyes"></i>
+						<i style="opacity: 0.8" class="em-svg em-grin"></i>
+						<i style="opacity: 0.4" class="em-svg em-sleeping"></i>
+				</div>
+			</div>
+			<div class="search-result">
+				<img src="https://via.placeholder.com/150">
+				<div class="search-result-title">
+					<h2>long title title title title title title title title title titletitle title title title title title title title title titletitle title title title title title title title title titletitle title title title title title title title title title</h2>
+				</div>
+				<div id="search-result-emotions">
+						<i style="opacity: 0.1" class="em-svg em-angry" ></i>
+						<i style="opacity: 0.5" class="em-svg em-cry"></i>
+						<i style="opacity: 0.3" class="em-svg em-heart_eyes"></i>
+						<i style="opacity: 0.8" class="em-svg em-grin"></i>
+						<i style="opacity: 0.4" class="em-svg em-sleeping"></i>
+				</div>
+		</div>
+				
+		
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
